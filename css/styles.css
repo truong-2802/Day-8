@@ -137,6 +137,10 @@ a {
 }
 
 
+.hero .breadcrumbs li:nth-child(1):hover{
+    color: #783df0;
+}
+
 
 
 .user-action {
