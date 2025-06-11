@@ -129,12 +129,8 @@ a {
     top: 38px;
     left: -5px;
     background-color: #fff;
-    display: none;
 }
 
-.header .nav li:hover .sub-menu {
-    display: block;
-}
 
 
 .hero .breadcrumbs li:nth-child(1):hover{
@@ -193,6 +189,19 @@ a {
     gap: 20px;
 }
 
+.header .nav .sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: 50% top;
+    transition: transform 0.3s , opacity 0.3s , visibility 0.3s ;
+}
+
+.header .nav li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
 
 /* search */
 
