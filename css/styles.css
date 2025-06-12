@@ -286,6 +286,7 @@ a {
 
 }
 
+
 .search-icon .input-search {
     border: none;
     margin: 10px;
@@ -415,6 +416,9 @@ a {
 .text .fa-user,
 .float-left img {
     margin-right: 10px;
+}
+.sub-menu li{
+    border-bottom: 1px solid #ccc;
 }
 
 .float-left img {
