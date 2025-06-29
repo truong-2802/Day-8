@@ -7,6 +7,7 @@
         <title>Scholars - Education, University &amp; LMS HTML Template</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/responsive.css">
 
         <!-- icon -->
         <link rel="stylesheet"
@@ -35,14 +36,26 @@
                         <!-- start-header -->
                         <div class="header">
                             <!-- logo -->
-                            <a href="./">
-                                <img src="./img/logo.png" alt class="logo">
-                            </a>
+                            <div class="logo-s1">
+                                <a href="./">
+                                    <img src="./img/logo.png" alt class="logo">
+                                </a>
+                            </div>
+
+                            <div class="sib">
+                                <label for="bar">
+                                    <i class="fa-solid fa-bars"></i>
+                                </label>
+                            </div>
+                            <input type="checkbox" name id="bar" hidden>
 
                             <!-- start nav -->
                             <ul class="nav">
                                 <li class="nav1">
                                     <a class="fon" href>HOME</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/index.html">Home
@@ -60,6 +73,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>COURSES</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/course-2-column.html">Course
@@ -76,6 +92,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>EVENTS</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/event-list.html">Event
@@ -92,6 +111,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>Pages</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/our-teacher.html">Our
@@ -118,6 +140,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>PORTFOLIO</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/portfolio-2-column.html">portfolio
@@ -132,6 +157,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>BLOG</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/blog.html">Blog</a></li>
@@ -142,6 +170,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>SHOP</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                         <li><a
                                                 href="https://themazine.com/html/scholars-lms/shop.html">Shop
@@ -153,6 +184,9 @@
                                 </li>
                                 <li class="nav1">
                                     <a class="fon" href>CONTACT</a>
+                                    <button>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
                                     <ul class="sub-menu">
                                     </ul>
                                 </li>
@@ -267,15 +301,14 @@
 
                         <div class="introduction">
                             <div class="courses-menu">
-                                <ul class="menu-list">
+                                <ul class="menu-list" >
                                     <li><a href
                                             class="tran3s active">New</a></li>
                                     <li><a href class="tran3s">Trending</a></li>
                                     <li><a href class="tran3s">Popular</a></li>
                                     <li><a href
                                             class="tran3s">Best-Selling</a></li>
-                                    <li><a href class="tran3s">Most
-                                            Rated</a></li>
+                                    <li><a href class="tran3s">Most Rated</a></li>
                                 </ul>
                             </div>
 
@@ -284,6 +317,7 @@
                                     <div class="img">
                                         <img src="./img/img-1.jpg" alt>
                                     </div>
+                                    
                                     <div class="text">
                                         <p class="fill">
                                             <a
@@ -547,6 +581,7 @@
                                         <img src="./img/img-2.jpg" alt>
                                     </div>
                                     <div class="text">
+                                       
                                         <p class="fill">
                                             <a
                                                 href="https://themazine.com/html/scholars-lms/course-details.html"
@@ -630,7 +665,7 @@
             <!-- end top-page -->
 
             <div class="footer">
-                <div class="container">
+                <div class="container pa">
                     <div class="footer-btn">
                         <div class="footer-logo">
                             <a
@@ -708,7 +743,9 @@
                             </p>
                             <form action="#">
                                 <input type="text" placeholder="Your Email">
-                                <button class="rectangle-out">SEND</button>
+                                <div class="out">
+                                    <button class="rectangle-out">SEND</button>
+                                </div>
                             </form>
                         </div>
                     </div>

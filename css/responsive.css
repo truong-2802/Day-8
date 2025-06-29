@@ -1,0 +1,213 @@
+.sib,
+.nav1 button {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    padding: 0 50px;
+  }
+  .header .nav a.fon {
+    font-size: 1.4rem;
+    padding: 6px 10px 20px 10px;
+  }
+  /* .row {
+    flex-wrap: wrap;
+  } */
+  .single-course-grid {
+    width: calc((100% - 30px) / 2);
+  }
+  .single-course-grid:last-child {
+    max-width: calc((50% - 30px));
+  }
+
+  .footer-logo ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-btn p,
+  .footer-btn li a {
+    font-size: 1.4rem;
+  }
+
+  /* .single-course-grid{
+    width: 40%;
+  } */
+  .search-icon,
+  .courses {
+    width: 90%;
+  }
+
+  .footer-btn {
+    gap: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sib {
+    display: block;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .nav {
+    position: absolute;
+    top: 200%;
+    left: 5px;
+    right: 0;
+    background-color: #000;
+    flex-direction: column;
+    z-index: 999;
+  }
+
+  .header .nav li > a.fon {
+    padding: 17.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .header .nav > li {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .header .nav > li > a {
+    flex: 1;
+  }
+
+  .header .nav .sub-menu {
+    max-height: 0;
+    transition: all 0.5s ease;
+  }
+
+  .header .nav button:focus ~ .sub-menu {
+    display: block;
+    max-height: 350px;
+  }
+
+  .sub-menu > li:not(:last-child) {
+    border: none;
+  }
+
+  .nav1 button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .nav1 button .fa-chevron-down {
+    color: #fff;
+  }
+
+  .header .nav .sub-menu {
+    position: static;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .nav {
+    display: block;
+  }
+  .content .feature {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .search-icon,
+  .courses {
+    width: calc(50% - 20px);
+  }
+
+  .content .feature .sidebar {
+    flex-grow: 1;
+    margin-bottom: 70px;
+  }
+
+  .footer-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 calc((75%) / 3);
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    flex: 0 0 40%;
+  }
+  .footer-list:not(:last-child) {
+    flex: 0 0 calc((40% - 20px) / 2);
+  }
+
+  .footer-list:last-child {
+    flex: 0 0 50%;
+    flex-grow: 1;
+  }
+
+  .footer-list-end {
+    flex: 0 0 46%;
+  }
+
+  .single-course-grid:last-child {
+    max-width: calc(50%);
+  }
+
+
+  .footer-list-end input {
+    width: 100%;
+  }
+}
+ .single-course-grid .img img {
+    max-width: 100%;
+  }
+
+@media (max-width: 767.98px) {
+  .container {
+    padding: 0 20px;
+  }
+  .single-course-grid {
+    width: 100%;
+  }
+  .single-course-grid .img img {
+    max-width: 100%;
+    height: 200%;
+  }
+
+  .single-course-grid:last-child {
+    max-width: 100%;
+  }
+
+  .search-icon,
+  .courses {
+    width: calc(100% - 20px);
+  }
+
+  .footer-logo,
+  .footer-list-end {
+    flex: 0 0 calc(100%);
+  }
+ 
+
+  .footer-btn{
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+}
+
+@media (max-width: 575.98px) {
+ 
+  single-course-grid{
+    padding-right: 50px;
+  }
+}
+
+/* tôi muốn khi tôi thay đổi kích thước màn hình cũng để responsive thì không đưuocj co giản khích thước của  single-course-grid vì nó rất xấu */
